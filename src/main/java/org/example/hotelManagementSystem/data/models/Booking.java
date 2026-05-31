@@ -15,6 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
         private Guest guest;
         private LocalDate checkinDate;
         private LocalDate checkoutDate;
+        private String id;
 
 
     }

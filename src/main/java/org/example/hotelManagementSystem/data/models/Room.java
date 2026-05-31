@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Document
 public class Room {
-    private int roomNumber;
+    private String roomNumber;
     private RoomType roomtype;
     private double price;
     private boolean isAvailabe;

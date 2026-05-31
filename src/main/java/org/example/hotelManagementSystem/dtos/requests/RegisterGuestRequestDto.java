@@ -1,9 +1,11 @@
 package org.example.hotelManagementSystem.dtos.requests;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class RegisterGuestRequest {
+@NoArgsConstructor
+public class RegisterGuestRequestDto {
     private String firstName;
     private String lastName;
     private String email;
