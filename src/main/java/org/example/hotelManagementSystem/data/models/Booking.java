@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 
 import lombok.Data;
+import org.example.hotelManagementSystem.data.models.enums.BookingStatus;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -16,6 +17,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
         private LocalDate checkinDate;
         private LocalDate checkoutDate;
         private String id;
+        private BookingStatus bookingStatus;
 
 
     }

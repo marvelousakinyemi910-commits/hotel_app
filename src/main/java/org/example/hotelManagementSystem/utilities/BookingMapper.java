@@ -3,7 +3,9 @@ package org.example.hotelManagementSystem.utilities;
 import org.example.hotelManagementSystem.data.models.Booking;
 import org.example.hotelManagementSystem.dtos.requests.BookingRequestDto;
 import org.example.hotelManagementSystem.dtos.responses.BookingResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookingMapper {
     public BookingResponse toBookingResponse(Booking booking) {
         BookingResponse bookingResponse = new BookingResponse();

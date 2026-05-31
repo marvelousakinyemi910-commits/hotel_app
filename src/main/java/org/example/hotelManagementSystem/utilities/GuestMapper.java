@@ -2,6 +2,7 @@ package org.example.hotelManagementSystem.utilities;
 
 import org.example.hotelManagementSystem.data.models.Guest;
 import org.example.hotelManagementSystem.dtos.requests.RegisterGuestRequestDto;
+import org.example.hotelManagementSystem.dtos.responses.LoginResponse;
 import org.example.hotelManagementSystem.dtos.responses.RegisterGuestResponse;
 
 public class GuestMapper {
@@ -20,6 +21,13 @@ public class GuestMapper {
        response.setEmail(guest.getEmail());
        response.setId(guest.getId());
        return response;
+    }
+    public LoginResponse toLogInResponse(Guest guest){
+        LoginResponse response = new LoginResponse();
+        response.setGuestId(guest.getId());
+        response.setEmail(guest.getEmail());
+        response.setGuestName(guest.getFirstName());
+        return response;
     }
 
 }
