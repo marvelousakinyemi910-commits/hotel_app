@@ -4,7 +4,9 @@ import org.example.hotelManagementSystem.data.models.Guest;
 import org.example.hotelManagementSystem.dtos.requests.RegisterGuestRequestDto;
 import org.example.hotelManagementSystem.dtos.responses.LoginResponse;
 import org.example.hotelManagementSystem.dtos.responses.RegisterGuestResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class GuestMapper {
     public Guest toEntity(RegisterGuestRequestDto request){
         Guest guest = new Guest();

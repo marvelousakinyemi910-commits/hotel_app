@@ -2,7 +2,9 @@ package org.example.hotelManagementSystem.utilities;
 
 import org.example.hotelManagementSystem.data.models.Payment;
 import org.example.hotelManagementSystem.dtos.requests.PaymentRequestDto;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PaymentMapper {
     public Payment toEntity(PaymentRequestDto request) {
         Payment payment = new Payment();

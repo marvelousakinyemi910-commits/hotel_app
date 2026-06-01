@@ -3,7 +3,9 @@ package org.example.hotelManagementSystem.utilities;
 import org.example.hotelManagementSystem.data.models.Room;
 import org.example.hotelManagementSystem.dtos.requests.RoomRequestDto;
 import org.example.hotelManagementSystem.dtos.responses.RoomResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RoomMapper {
     public Room toEntity(RoomRequestDto request){
         Room room = new Room();
